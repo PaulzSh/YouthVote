@@ -4,6 +4,8 @@ import java.util.Date;
 
 
 public class RegistrationVo {
+    private Long id;
+    private Integer sex;
     private String email;
     private String zipCode;
     private String name;
@@ -13,7 +15,24 @@ public class RegistrationVo {
     private String city;
     private String state;
     private Date birthDay;
-    private String phone;
+    private String mobile;
+    private String status;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
 
     public String getEmail() {
         return email;
@@ -85,5 +104,21 @@ public class RegistrationVo {
 
     public void setBirthDay(Date birthDay) {
         this.birthDay = birthDay;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
