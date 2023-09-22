@@ -13,7 +13,6 @@ import org.springframework.context.annotation.ComponentScan;
 public class SpringBootVotezApplication {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DynamoDBConfig.class);
         SpringApplication.run(SpringBootVotezApplication.class, args);
     }
 
