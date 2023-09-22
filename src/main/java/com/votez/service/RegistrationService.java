@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 public interface RegistrationService {
 
-    void register(RegistrationVo vo);
+    void register(RegistrationVo vo) throws Exception;
 
-    RegistrationVo detail(Long id);
+    String detail(Long id);
 }
