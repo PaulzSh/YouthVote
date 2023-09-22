@@ -35,13 +35,13 @@ public class RegistrationController {
 
     @GetMapping("/detail")
     public RestResponse registerDetail(Long id) {
-        RegistrationVo vo = new RegistrationVo();
+        String res = "";
         try {
-            vo = registrationService.detail(id);
+            res = registrationService.detail(id);
         } catch (Exception e) {
             System.out.println("exception " + e);
         }
-        return new RestResponse("200","",vo);
+        return new RestResponse("200","",res);
     }
 
     private boolean verify(RegistrationVo vo, StringBuilder msg) {

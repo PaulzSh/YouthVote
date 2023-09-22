@@ -2,14 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace:改mapper.xml映射文件的唯一标识并且必须和数据处理层的接口的路径相同-->
 <mapper namespace="com.votez.mapper.RegistrationMapper">
-    <insert id="register" parameterType="com.votez.model.Registration" >
-        insert into registration(id,email,zip_code,name,first_name,last_name,address,city,state,
-        birth_day,mobile,status)
-        value (#{id},#{email},#{zipCode},#{name},#{firstName},#{lastName},
-        #{address},#{city},#{state},#{birthDay},#{mobile},#{status})
-    </insert>
+    <!--<insert id="register" parameterType="com.votez.model.Registration" >-->
+        <!--insert into registration(id,email,zip_code,name,first_name,last_name,address,city,state,-->
+        <!--birth_day,mobile,status)-->
+        <!--value (#{id},#{email},#{zipCode},#{name},#{firstName},#{lastName},-->
+        <!--#{address},#{city},#{state},#{birthDay},#{mobile},#{status})-->
+    <!--</insert>-->
 
-    <select id="detail" parameterType="java.lang.Long" resultType="com.votez.model.Registration">
-        select * from registration where id = #{id}
-    </select>
+    <!--<select id="detail" parameterType="java.lang.Long" resultType="com.votez.model.Registration">-->
+        <!--select * from registration where id = #{id}-->
+    <!--</select>-->
 </mapper>

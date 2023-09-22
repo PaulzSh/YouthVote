@@ -21,7 +21,7 @@ public class VerifyUtil {
     }
 
     public static boolean verifyZipCode(String zipCode){
-        Pattern p1 = Pattern.compile(mobilePattern);
+        Pattern p1 = Pattern.compile(zipCodePattern);
         Matcher m1 = p1.matcher(zipCode);
         return m1.matches();
     }
