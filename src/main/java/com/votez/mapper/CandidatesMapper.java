@@ -2,7 +2,6 @@ package com.votez.mapper;
 
 import com.votez.model.Candidates;
 import com.votez.model.CandidatesExample;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,10 +19,6 @@ public interface CandidatesMapper {
     List<Candidates> selectByExample(CandidatesExample example);
 
     Candidates selectByPrimaryKey(Integer id);
-
-    int updateByExampleSelective(@Param("record") Candidates record, @Param("example") CandidatesExample example);
-
-    int updateByExample(@Param("record") Candidates record, @Param("example") CandidatesExample example);
 
     int updateByPrimaryKeySelective(Candidates record);
 
