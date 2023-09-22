@@ -7,21 +7,28 @@ import com.votez.service.RegistrationService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
+@Service
 public class RegistrationServiceImpl implements RegistrationService {
 
-    @Resource
+    @Autowired
     private RegistrationMapper registrationMapper;
 
-    @Transactional
     @Override
     public void register(RegistrationVo vo) {
         Registration registration = new Registration();
         BeanUtils.copyProperties(vo,registration);
         System.out.println("test success");
-//        registrationMapper.register(registration);
+        registrationMapper.register(registration);
+    }
+
+    @Override
+    public RegistrationVo detail(Long id) {
+        Registration registration =  registrationMapper.detail(id);
+        RegistrationVo vo = new RegistrationVo();
+        BeanUtils.copyProperties(registration,vo);
+        return vo;
     }
 }

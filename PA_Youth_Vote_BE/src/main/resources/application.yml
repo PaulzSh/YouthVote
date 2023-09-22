@@ -1,0 +1,12 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/vote?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&autoReconnect=true&useSSL=false&rewriteBatchedStatements=true&serverTimezone=GMT%2b8
+    username: root
+    password: root
+  #配置Mapper.xml映射文件
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
+
