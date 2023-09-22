@@ -1,0 +1,11 @@
+com\votez\controller\ElectionController.class
+com\votez\controller\CandidateController.class
+com\votez\mapper\RegistrationMapper.class
+com\votez\controller\RegistrationController.class
+com\votez\service\RegistrationService.class
+com\votez\common\util\VerifyUtil.class
+com\votez\service\impl\RegistrationServiceImpl.class
+com\votez\model\vo\RegistrationVo.class
+com\votez\model\RestResponse.class
+com\votez\SpringBootVotezApplication.class
+com\votez\model\Registration.class
