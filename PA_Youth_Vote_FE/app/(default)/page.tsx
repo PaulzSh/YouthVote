@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Home - Simple',
+  title: 'PA Youth Vote - Home Page',
   description: 'Page description',
 }
 
